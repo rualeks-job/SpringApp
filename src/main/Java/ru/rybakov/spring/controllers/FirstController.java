@@ -17,7 +17,7 @@ public class FirstController {
             System.out.println(name + " " +surname);
         }
         return "first/hello";
-    };
+    }
     @GetMapping("/goodbye")
     public String sayGoodbye(){
         return "first/goodbye";

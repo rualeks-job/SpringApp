@@ -1,9 +1,8 @@
 package ru.rybakov.spring.model;
 
-import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
-import java.util.Date;
+
 
 public class Person {
     private int user_id;
@@ -12,7 +11,7 @@ public class Person {
     private String user_fio;
     private String user_birthday;
 
-    public Person(int user_id, String user_fio, String  user_birthday) {
+    public Person(int user_id, String user_fio, String user_birthday) {
         this.user_id = user_id;
         this.user_fio = user_fio;
         this.user_birthday = user_birthday;
@@ -37,7 +36,7 @@ public class Person {
         this.user_fio = FIO;
     }
 
-    public String  getBirthday() {
+    public String getBirthday() {
         return user_birthday;
     }
 
